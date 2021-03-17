@@ -18,7 +18,7 @@ struct ContentView: View {
         return VStack( spacing: 15) {
             Text("Soon to Expire").font(.largeTitle)
             ForEach(0..<4) { index in
-                ExpireCard(stateOfCard: State.info)
+                ExpireCard(stateOfCard: State.used)
             } 
             MenuBar()
         }.padding().foregroundColor(Color.black).font(Font.title)
